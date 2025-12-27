@@ -1,311 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Easy step-by-step guide for canopytax.com login, canopy client portal login, practitioner access, forgot password, and mobile app login. Get into your Canopy account quickly.">
-<meta name="keywords" content="canopytax.com login, canopy tax login, canopy client portal login, getcanopy login, canopy practitioner login, canopy app login, canopy forgot password, canopy mobile login, canopy tax portal, clientportal.com login">
-<meta name="author" content="Your Name - Tax Software Guide">
-<meta property="og:title" content="Canopy Tax Login: Client Portal & Practitioner Guide">
-<meta property="og:description" content="Simple instructions to login to CanopyTax.com client portal or practitioner dashboard. Fix common issues fast.">
-<meta property="og:image" content="https://www.getcanopy.com/hubfs/logo-heading.svg">
-<meta property="og:url" content="https://yourusername.github.io/your-repo/">
-<title>Canopy Tax Login: Client Portal & Practitioner Guide</title>
-<style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Easy step-by-step guide for canopytax.com login, canopy client portal login, practitioner access, forgot password, and mobile app login. Get into your Canopy account quickly.">
+    <meta name="keywords" content="canopytax.com login, canopy tax login, canopy client portal login, getcanopy login, canopy practitioner login, canopy app login, canopy forgot password, canopy mobile login, canopy tax portal, clientportal.com login">
+    <meta name="author" content="Your Name - Tax Software Guide">
+    <meta property="og:title" content="Canopy Tax Login: Client Portal & Practitioner Guide">
+    <meta property="og:description" content="Simple instructions to login to CanopyTax.com client portal or practitioner dashboard. Fix common issues fast.">
+    <meta property="og:image" content="https://www.getcanopy.com/hubfs/logo-heading.svg">
+    <meta property="og:url" content="https://yourusername.github.io/your-repo/">
+    <title>Canopy Tax Login: Client Portal & Practitioner Guide</title>
+    <style>
         body {
-
             background-color: #F1F3F7;
-
             color: #000000;
-
             font-family: Arial, sans-serif;
-
             line-height: 1.6;
-
             margin: 0;
-
             padding: 0;
-
         }
-
         .hero {
-
             position: relative;
-
             text-align: center;
-
             color: white;
-
         }
-
         .hero img {
-
             width: 100%;
-
             height: auto;
-
             max-height: 600px;
-
             object-fit: cover;
-
-            filter: brightness(0.55); /* Darken for super clear text */
-
+            filter: brightness(0.55);
         }
-
         .hero-overlay {
-
             position: absolute;
-
             top: 50%;
-
             left: 50%;
-
             transform: translate(-50%, -50%);
-
             width: 90%;
-
             max-width: 1100px;
-
         }
-
         .hero h1 {
-
-            font-size: 4em; /* Even larger */
-
+            font-size: 4em;
             font-weight: 900;
-
             color: #FFFFFF;
-
-            text-shadow: 4px 4px 10px rgba(0,0,0,0.9); /* Strong shadow */
-
-            margin: 0 0 40px 0;
-
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.9);
+            margin: 0 0 30px 0;
             line-height: 1.1;
-
         }
-
         .hero h1 small {
-
-            font-size: 0.45em;
-
+            font-size: 0.5em;
             display: block;
-
             margin-top: 15px;
-
             font-weight: 500;
-
             opacity: 0.95;
-
         }
-
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         .hero button {
-
-            background-color: #0BE6C7; /* Aqua - eye-catching */
-
+            background-color: #0BE6C7;
             color: #000000;
-
             border: none;
-
-            padding: 18px 40px;
-
-            font-size: 1.4em;
-
+            padding: 16px 40px;
+            font-size: 1.3em;
             font-weight: bold;
-
             cursor: pointer;
-
             border-radius: 10px;
-
-            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-
-            margin: 0 20px;
-
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
             transition: all 0.3s;
-
+            min-width: 240px;
         }
-
         .hero button:hover {
-
-            background-color: #2B4BFF; /* Blue on hover */
-
+            background-color: #2B4BFF;
             color: #FFFFFF;
-
             transform: scale(1.05);
-
         }
-
         main {
-
             padding: 40px 20px;
-
             background-color: #FFFFFF;
-
             margin: 30px auto;
-
             max-width: 900px;
-
             border-radius: 12px;
-
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-
         }
-
         h2 {
-
             color: #2B4BFF;
-
             font-size: 1.8em;
-
             margin-top: 40px;
-
         }
-
         ul, ol {
-
             margin-bottom: 25px;
-
             padding-left: 25px;
-
         }
-
         img.content-img {
-
             max-width: 100%;
-
             height: auto;
-
             border-radius: 10px;
-
             margin: 25px 0;
-
             box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-
         }
-
         a {
-
             color: #2B4BFF;
-
             text-decoration: none;
-
             font-weight: 600;
-
         }
-
         a:hover {
-
             color: #0BE6C7;
-
             text-decoration: underline;
-
         }
-
         .quick-links {
-
             background-color: #F1F3F7;
-
             padding: 20px;
-
             border-radius: 10px;
-
             margin-bottom: 35px;
-
         }
 
+        /* Responsive Design - Mobile & Tablet */
         @media (max-width: 768px) {
-
             .hero h1 {
-
-                font-size: 2.8em;
-
+                font-size: 2.5em; /* Title chhota ho jayega */
             }
-
+            .hero h1 small {
+                font-size: 0.7em;
+            }
+            .hero .buttons {
+                flex-direction: column; /* Buttons ek ke neeche ek */
+                align-items: center;
+                gap: 15px;
+            }
             .hero button {
-
-                display: block;
-
-                width: 85%;
-
-                margin: 15px auto;
-
+                width: 90%;
+                font-size: 1.1em;
+                padding: 14px 30px;
             }
-
+            main {
+                padding: 30px 15px;
+                margin: 20px 10px;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .quick-links ul li {
+                font-size: 1em;
+            }
         }
-</style>
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero-overlay {
+                width: 95%;
+            }
+            img.content-img {
+                margin: 15px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="hero">
-<img src="https://www.getcanopy.com/hubfs/Homepage%202022/Logo%20Image%2002.png" alt="Canopy Tax Software - Practice Management for Accountants">
-<div class="hero-overlay">
-<h1>Canopy Tax Login<br><small>Quick Access to Client Portal & Practitioner Dashboard</small></h1>
-<button onclick="window.open('https://clientportal.com/', '_blank')">Login to Client Portal</button>
-<button onclick="window.open('https://app.canopytax.com/', '_blank')">Login to Practitioner App</button>
-</div>
-</div>
- 
+    <div class="hero">
+        <img src="https://www.getcanopy.com/hubfs/Homepage%202022/Logo%20Image%2002.png" alt="Canopy Tax Software - Practice Management for Accountants">
+        <div class="hero-overlay">
+            <h1>Canopy Tax Login<br><small>Quick Access to Client Portal & Practitioner Dashboard</small></h1>
+            <div class="buttons">
+                <button onclick="window.open('https://clientportal.com/', '_blank')">Login to Client Portal</button>
+                <button onclick="window.open('https://app.canopytax.com/', '_blank')">Login to Practitioner App</button>
+            </div>
+        </div>
+    </div>
+
     <main>
-<div class="quick-links">
-<h2>Quick Login Links</h2>
-<ul>
-<li><strong>Client Portal (Recommended):</strong> <a href="https://clientportal.com/" target="_blank">clientportal.com</a> or <a href="https://canopy.clientportal.com/" target="_blank">canopy.clientportal.com</a></li>
-<li><strong>Practitioner Dashboard:</strong> <a href="https://app.canopytax.com/" target="_blank">app.canopytax.com</a></li>
-<li><strong>Mobile App:</strong> Search "Canopy Client Portal" on App Store or Google Play</li>
-</ul>
-</div>
- 
+        <div class="quick-links">
+            <h2>Quick Login Links</h2>
+            <ul>
+                <li><strong>Client Portal (Recommended):</strong> <a href="https://clientportal.com/" target="_blank">clientportal.com</a> or <a href="https://canopy.clientportal.com/" target="_blank">canopy.clientportal.com</a></li>
+                <li><strong>Practitioner Dashboard:</strong> <a href="https://app.canopytax.com/" target="_blank">app.canopytax.com</a></li>
+                <li><strong>Mobile App:</strong> Search "Canopy Client Portal" on App Store or Google Play</li>
+            </ul>
+        </div>
+
         <p>Searching for <strong>canopytax.com login</strong> or <strong>canopy client portal login</strong>? This easy guide helps you access Canopy (GetCanopy) – the #1 practice management software for tax professionals.</p>
- 
+
         <h2>What is Canopy Tax?</h2>
-<p>Canopy is trusted software for accountants, with secure client portals, file sharing, e-signatures, payments, and more. Old canopytax.com links redirect to the current platform.</p>
- 
+        <p>Canopy is trusted software for accountants, with secure client portals, file sharing, e-signatures, payments, and more. Old canopytax.com links redirect to the current platform.</p>
+
         <img src="https://futurefirm.co/wp-content/uploads/2023/09/1.-Intro.png" alt="Canopy Tax Software Overview" class="content-img">
- 
+
         <h2>Step-by-Step: Client Portal Login</h2>
-<img src="https://f.hubspotusercontent40.net/hubfs/2675296/Screen%20Shot%202022-01-26%20at%203.08.13%20PM.png" alt="Canopy Client Portal Login Page" class="content-img">
-<ol>
-<li>Get an email invitation from your accountant.</li>
-<li>Click the link in the email (check spam) to create your account and set a password.</li>
-<li>Go to <a href="https://clientportal.com/" target="_blank">clientportal.com</a>.</li>
-<li>Enter your email and password.</li>
-<li>Complete two-factor authentication (2FA) for security.</li>
-<li>You're in! Access files, sign documents, and more.</li>
-</ol>
- 
+        <img src="https://f.hubspotusercontent40.net/hubfs/2675296/Screen%20Shot%202022-01-26%20at%203.08.13%20PM.png" alt="Canopy Client Portal Login Page" class="content-img">
+        <ol>
+            <li>Get an email invitation from your accountant.</li>
+            <li>Click the link in the email (check spam) to create your account and set a password.</li>
+            <li>Go to <a href="https://clientportal.com/" target="_blank">clientportal.com</a>.</li>
+            <li>Enter your email and password.</li>
+            <li>Complete two-factor authentication (2FA) for security.</li>
+            <li>You're in! Access files, sign documents, and more.</li>
+        </ol>
+
         <h2>Mobile App Login</h2>
-<ol>
-<li>Download "Canopy Client Portal" app.</li>
-<li>Sign in with your email and password.</li>
-<li>Use Face ID/Touch ID for faster access.</li>
-</ol>
- 
+        <ol>
+            <li>Download "Canopy Client Portal" app.</li>
+            <li>Sign in with your email and password.</li>
+            <li>Use Face ID/Touch ID for faster access.</li>
+        </ol>
+
         <h2>Practitioner Login (For Accountants)</h2>
-<ol>
-<li>Visit <a href="https://app.canopytax.com/" target="_blank">app.canopytax.com</a>.</li>
-<li>Enter your email and password.</li>
-<li>Complete 2FA if enabled.</li>
-</ol>
- 
-        <img src="https://www.getcanopy.com/hs-fs/hubfs/Legacy/Imported_Blog_Media/Analytics1-3-2.png?width=1753&height=1289&name=Analytics1-3-2.png%22 alt="Canopy Practitioner Dashboard Example" class="content-img">
- 
+        <ol>
+            <li>Visit <a href="https://app.canopytax.com/" target="_blank">app.canopytax.com</a>.</li>
+            <li>Enter your email and password.</li>
+            <li>Complete 2FA if enabled.</li>
+        </ol>
+
+        <img src="https://www.getcanopy.com/hs-fs/hubfs/Legacy/Imported_Blog_Media/Analytics1-3-2.png?width=1753&height=1289&name=Analytics1-3-2.png" alt="Canopy Practitioner Dashboard Example" class="content-img">
+
         <h2>Forgot Password or Issues?</h2>
-<ul>
-<li>Click "Forgot Password" on login page → Reset via email.</li>
-<li>No invite? Contact your accountant.</li>
-<li>Browser issues: Try latest Chrome/Firefox, clear cache.</li>
-<li>Need more help? <a href="https://support.getcanopy.com/" target="_blank">Canopy Support Center</a></li>
-</ul>
- 
+        <ul>
+            <li>Click "Forgot Password" on login page → Reset via email.</li>
+            <li>No invite? Contact your accountant.</li>
+            <li>Browser issues: Try latest Chrome/Firefox, clear cache.</li>
+            <li>Need more help? <a href="https://support.getcanopy.com/" target="_blank">Canopy Support Center</a></li>
+        </ul>
+
         <h2>Tips for Easy Login</h2>
-<ul>
-<li>Bookmark clientportal.com</li>
-<li>Use a password manager</li>
-<li>Keep app updated</li>
-<li>All connections are secure (HTTPS)</li>
-</ul>
- 
-        <p>Disclaimer: This website is not associated with Canopytax.com login or any other brand.We are an independent or third-party service provider providing support with our service packages..</p>
-</main>
+        <ul>
+            <li>Bookmark clientportal.com</li>
+            <li>Use a password manager</li>
+            <li>Keep app updated</li>
+            <li>All connections are secure (HTTPS)</li>
+        </ul>
+
+        <p>Disclaimer: This website is not associated with Canopytax.com login or any other brand. We are an independent or third-party service provider providing support with our service packages.</p>
+    </main>
 </body>
 </html>
- 
